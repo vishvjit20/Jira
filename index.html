@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jira Ticket Management</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="filters">
+          <div class="filter">
+            <div class="pink"></div>
+          </div>
+          <div class="filter">
+            <div class="blue"></div>
+          </div>
+          <div class="filter">
+            <div class="green"></div>
+          </div>
+          <div class="filter">
+            <div class="black"></div>
+          </div>
+        </div>
+        <div class="action-buttons">
+          <div class="add"><span class="material-icons"> add </span></div>
+          <div class="delete"><span class="material-icons"> delete </span></div>
+        </div>
+      </div>
+
+      <div class="ticket-container"></div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="popup-modal hidden">
+      <button class="close-modal">&times;</button>
+      <div class="modal-text">Are you sure you want to delete this ticket?</div>
+      <div class="modal-btns">
+        <button class="cancel">Cancel</button>
+        <button class="confirm">Confirm</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+
+    <script>
+      let uid = new ShortUniqueId();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
