@@ -74,7 +74,7 @@ addBtn.addEventListener("click", function () {
   let div = document.createElement("div"); //<div></div>
   div.classList.add("modal"); //<div class="modal"></div>
 
-  div.innerHTML = `<div class="modal">
+  div.innerHTML = `
   <div class="task-section">
     <div class="task-inner-container" contenteditable="true" maxLength="10"></div>
   </div>

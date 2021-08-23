@@ -46,10 +46,14 @@
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
-
     <script>
-      let uid = new ShortUniqueId();
+      const uid = () => {
+        var firstPart = (Math.random() * 46656) | 0;
+        var secondPart = (Math.random() * 46656) | 0;
+        firstPart = ("000" + firstPart.toString(36)).slice(-3);
+        secondPart = ("000" + secondPart.toString(36)).slice(-3);
+        return firstPart + secondPart;
+      };
     </script>
 
     <script src="script.js"></script>
