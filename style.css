@@ -342,8 +342,7 @@ body {
     width: 90%;
   }
   .popup-modal {
-    width: 80%;
-    display: flex;
+    width: 90%;
     align-items: center;
   }
   .modal-text {
